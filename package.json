@@ -1,11 +1,39 @@
 {
-  "name": "hardhat-project",
+  "name": "omni-hackathon",
+  "scripts": {
+    "deploy": "npx hardhat run scripts/deploy.js --network ropsten",
+    "mint" : "node scripts/minting.js",
+    "verify" : "npx hardhat verify --network ropsten "
+  },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-etherscan": "^2.1.7",
     "@nomiclabs/hardhat-waffle": "^2.0.1",
     "chai": "^4.3.4",
+ 
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.1",
+    "eslint-plugin-promise": "^5.1.1",
     "ethereum-waffle": "^3.4.0",
     "ethers": "^5.5.1",
-    "hardhat": "^2.6.8"
+    "hardhat": "^2.6.8",
+    "hardhat-gas-reporter": "^1.0.4",
+    "prettier": "^2.4.1",
+    "prettier-plugin-solidity": "^1.0.0-beta.13",
+    "solhint": "^3.3.6",
+    "solidity-coverage": "^0.7.17"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.3.3",
+    "axios": "^0.23.0",
+    "fs": "0.0.1-security",
+    "dotenv": "^10.0.0",
+    "@openzeppelin/test-helpers": "^0.5.15",
+    "@pinata/ipfs-gateway-tools": "^1.1.6",
+    "form-data": "^4.0.0"
   }
 }

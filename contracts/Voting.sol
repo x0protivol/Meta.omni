@@ -10,7 +10,7 @@ import "hardhat/console.sol";
 contract VotingFactory {
     address[] public deployedVotings;
 
-    function createVoting(int price, int timelimit, uint successnumber) public {
+    function createVoting(uint price, uint timelimit, uint successnumber) public {
       require(successnumber > 1, "successnumber should integer");
       Voting newVoting = new Voting(price, timelimit, successnumber, msg.sender);
       deployedVotings.push(address(newVoting));
@@ -34,8 +34,8 @@ contract Voting {
   address[] public itemVoterList;
 
   uint  minSuccesssNumber;
-  int  baseTimePeriod;
-  int  Itemprice;
+  uint  baseTimePeriod;
+  uint  Itemprice;
   address owner;
 
   event Voteradded(uint indexed itemID);
@@ -51,7 +51,7 @@ contract Voting {
       _;
   }
 
-  constructor (int _itemPrice, int _baseTimePeriod, uint _minSuccesssNumber, address _owner) onlyOwner {      
+  constructor (uint _itemPrice, uint _baseTimePeriod, uint _minSuccesssNumber, address _owner) {      
       Itemprice = _itemPrice;
       baseTimePeriod = _baseTimePeriod;
       minSuccesssNumber = _minSuccesssNumber;
@@ -63,8 +63,11 @@ contract Voting {
     (bool success, ) = owner.call{value: price}("");
     require(success, "Failed to send ETH");
     require(baseTimePeriod > 0, "This vote is over already");
+    (, , VoterStatus temp) = getItemvoter(_voter);
+    require(temp == VoterStatus.unverified, "Revoting error");
+    // require(itemvoter.status == VoterStatus.unverified, "you are already voted");
     price = 0;
-    Itemvoter memory itemvoter = itemVoters[_voter];
+    Itemvoter storage itemvoter = itemVoters[_voter];
     itemvoter.itemnumber = _ItemId;
     itemvoter.voterAddress = _voter;
     itemvoter.status = VoterStatus.verified;
@@ -73,7 +76,7 @@ contract Voting {
     emit Voteradded(_ItemId);
   }
 
-  function setBaseTimePeriod(int _baseTimePeriod) external onlyOwner {
+  function setBaseTimePeriod(uint _baseTimePeriod) external onlyOwner {
     require(baseTimePeriod > _baseTimePeriod, 
     "Can't count up limit time");
     baseTimePeriod = _baseTimePeriod;
@@ -84,16 +87,17 @@ contract Voting {
   }
   
   function getItemvoter(address _address) public view returns (uint, address, VoterStatus) {
-      return (itemVoters[_address].itemnumber,
-        itemVoters[_address].voterAddress,
-        itemVoters[_address].status);
+    // require(itemVoters[_address].voterAddress != address(0x0), "Vote address error");
+    return (itemVoters[_address].itemnumber,
+      itemVoters[_address].voterAddress,
+      itemVoters[_address].status);
   }
   
   function countItemvoters() public view returns (uint) {
       return itemVoterList.length;
   } 
 
-  function postpone(int _baseTimePeriod) external onlyOwner {
+  function postpone(uint _baseTimePeriod) external onlyOwner {
     require(0 == itemVoterList.length || minSuccesssNumber <=  itemVoterList.length, 
     "Can't postpone ongoing vote");
     baseTimePeriod = _baseTimePeriod;
