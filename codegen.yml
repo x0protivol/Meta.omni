@@ -1,0 +1,13 @@
+schema: https://strapi.omnifinery.com/graphql
+# schema: http://localhost:1337/graphql
+# documents: 'src/**/!(*.d).{ts,tsx}'
+generates:
+    ./src/types.d.ts:
+        plugins:
+            - typescript
+        config:
+            avoidOptionals: true
+#            useImplementingTypes: true
+#            flattenGeneratedTypes: true
+#            preResolveTypes: true
+#            skipTypeNameForRoot: true

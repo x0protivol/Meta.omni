@@ -1,0 +1,169 @@
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body,
+#__next {
+	margin: 0;
+	// height: 100%;
+	min-height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	/* overflow-x: hidden; */
+}
+
+#__next {
+	height: 100%;
+}
+
+body,
+#__next {
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+button {
+	border: none;
+	background: none;
+}
+
+#nprogress .bar {
+	background: black !important;
+}
+
+.snipcart-modal {
+	background: white !important;
+}
+
+.snipcart-cart-header {
+	background: white !important;
+}
+
+@font-face {
+	font-family: 'CrimsonText';
+	src: url('/fonts/CrimsonText-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'OpenSans';
+	src: url('/fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'OpenSans Light';
+	src: url('/fonts/OpenSans-Light.ttf');
+}
+
+@font-face {
+	font-family: 'OpenSans Bold';
+	src: url('/fonts/open-sans/OpenSans-Bold.ttf');
+}
+
+@font-face {
+	font-family: 'Raleway ExtraLight';
+	src: url('/fonts/raleway/Raleway-ExtraLight.ttf');
+}
+
+@font-face {
+	font-family: 'Raleway Bold';
+	src: url('/fonts/raleway/Raleway-Bold.ttf');
+}
+
+@font-face {
+	font-family: 'Raleway Light';
+	src: url('/fonts/raleway/Raleway-Light.ttf');
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('/fonts/raleway/Raleway-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Raleway Medium';
+	src: url('/fonts/raleway/Raleway-Medium.ttf');
+}
+
+@font-face {
+	font-family: 'Nunito';
+	src: url('/fonts/nunito/Nunito-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Nunito Bold';
+	src: url('/fonts/nunito/Nunito-Bold.ttf');
+}
+
+@font-face {
+	font-family: 'Nunito Light';
+	src: url('/fonts/nunito/Nunito-ExtraLight.ttf');
+}
+
+@font-face {
+	font-family: 'Overlock Bold';
+	src: url('/fonts/overlock/Overlock-Bold.ttf');
+}
+
+@font-face {
+	font-family: 'SourceSansPro';
+	src: url('/fonts/source-sans-pro/SourceSansPro-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'SourceSansPro SemiBold';
+	src: url('/fonts/source-sans-pro/SourceSansPro-SemiBold.ttf');
+}
+
+@font-face {
+	font-family: 'SourceSansPro ExtraLight';
+	src: url('/fonts/source-sans-pro/SourceSansPro-ExtraLight.ttf');
+}
+
+@font-face {
+	font-family: 'SourceSansPro Light';
+	src: url('/fonts/source-sans-pro/SourceSansPro-Light.ttf');
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ol,
+ul,
+li {
+	text-decoration: none;
+	font-size: 1rem;
+	font-family: 'SourceSansPro';
+	color: black;
+}
+
+h1 {
+	font-size: 0.9375rem;
+}
+
+h2 {
+	font-size: 0.8125rem;
+}
+
+p,
+li {
+	font-size: 0.6875rem;
+}
+
+ul,
+ol {
+	list-style-type: none;
+}

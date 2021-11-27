@@ -1,0 +1,305 @@
+.desktopContainer {
+	flex: 10000 1 auto;
+	> div {
+		flex-direction: row;
+		margin-top: 2rem;
+	}
+}
+
+.mobileContainer {
+	flex-direction: column;
+	> div {
+		flex-direction: column;
+		margin: 0 1rem !important;
+
+		> section:first-of-type {
+			margin: 0 auto;
+		}
+
+		> section {
+			margin-top: 2rem !important;
+		}
+	}
+}
+
+.productContainer {
+	display: flex;
+	margin: 0 4rem;
+	height: 100%;
+
+	> section {
+		flex: 0 0 50%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		&:first-of-type,
+		&:last-of-type {
+			flex-basis: 25%;
+		}
+	}
+}
+
+.carouselContainer {
+	display: flex;
+	flex-direction: row;
+	flex: 1 1 auto;
+	width: 100%;
+
+	> div {
+		width: 100%;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+
+@mixin sliderButton {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	font-size: 1.75rem;
+}
+
+.sliderBackButton {
+	@include sliderButton;
+	left: 0;
+}
+
+.sliderNextButton {
+	@include sliderButton;
+	right: 0;
+}
+
+.productInfo {
+	align-items: flex-start !important;
+	letter-spacing: 0.25px;
+
+	> * {
+		margin-right: 2rem;
+	}
+
+	> h2,
+	h3 {
+		font-family: 'SourceSansPro';
+		font-weight: normal;
+		font-size: 0.6875rem;
+	}
+
+	> div,
+	p {
+		margin-top: 0.675rem;
+	}
+
+	> div {
+		p {
+			margin-top: 0.2rem;
+		}
+	}
+}
+
+.sectionSpacer {
+	align-self: stretch !important;
+	margin: 0 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	* {
+		font-family: 'SourceSansPro';
+		font-size: 0.6875rem;
+	}
+
+	> span {
+		font-weight: bold;
+		font-size: 0.9125rem;
+		margin-top: 0.2rem;
+	}
+
+	> select {
+		margin-top: 0.75rem;
+	}
+
+	> button {
+		margin-top: 0.65rem;
+	}
+
+	> a {
+		margin-top: 0.215rem;
+	}
+
+	> p {
+		margin-top: 0.315rem;
+	}
+
+	> p,
+	> a {
+		color: rgb(136, 136, 136);
+		text-align: center;
+	}
+
+	> button {
+		background: black;
+		color: white;
+		font-size: 0.875rem;
+		letter-spacing: 0.15ch;
+		text-transform: uppercase;
+		padding: 6.6666666667px 30px;
+		cursor: pointer;
+		align-self: stretch;
+	}
+
+	> a {
+		text-decoration: underline;
+	}
+}
+
+.select {
+	position: relative;
+	width: calc(100% - 8px);
+	display: block;
+	font-weight: 400;
+	//padding: 6.6666666667px 30px;
+	padding-left: 6px;
+
+	//padding-right: 0;
+	text-indent: 0.01px;
+	text-overflow: '';
+	background: transparent;
+	border: 1px solid #777;
+	outline: none;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-ms-border-radius: 0;
+	-moz-border-radius: 0;
+	-o-border-radius: 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	min-height: 30px;
+	background: transparent
+		url('//res.cloudinary.com/ssenseweb/image/upload/v1422551406/web/dropdow-arrow-2xmargin-right.png') center right
+		no-repeat;
+	background-size: 16px;
+	cursor: pointer;
+}
+
+.productsContainer {
+	margin: 0 2rem;
+	margin-top: 1.675rem !important;
+}
+
+.productsContainerMobile {
+	@extend .productsContainer;
+
+	margin: 0 2rem;
+
+	> ul {
+		flex-direction: row;
+		display: flex;
+		flex-wrap: wrap;
+
+		> li {
+			flex: 0 0 (100% / 2);
+		}
+	}
+}
+
+.productsContainerDesktop {
+	@extend .productsContainer;
+
+	margin: 0 2rem;
+
+	> ul {
+		flex-direction: row;
+		display: flex;
+
+		> li {
+			flex: 0 0 (100% / 7);
+		}
+	}
+}
+
+.editorialContainer {
+	display: flex;
+	flex-direction: row;
+	padding: 0 2rem;
+
+	> div {
+		> h3 {
+			margin-bottom: 1rem;
+		}
+
+		> span {
+			display: block;
+			height: 1px;
+			margin: 0.5rem 0;
+			width: 100%;
+			background: rgb(136, 136, 136);
+		}
+	}
+}
+
+.editorialContainerMobile {
+	@extend .editorialContainer;
+
+	> div {
+		margin-top: 0.5rem;
+	}
+
+	> div {
+		ul {
+			display: flex;
+			flex-direction: row;
+			> li {
+				padding: 0 1rem;
+			}
+		}
+	}
+}
+
+.editorialContainerDesktop {
+	@extend .editorialContainer;
+
+	> div {
+		flex: 0 0 calc(50% - 2rem);
+
+		&:first-of-type {
+			margin-right: 1rem;
+		}
+
+		&:last-of-type {
+			margin-left: 1rem;
+		}
+	}
+
+	> div:first-child {
+		ul {
+			display: flex;
+			flex-direction: row;
+			> li {
+				padding: 0 1rem;
+			}
+		}
+	}
+
+	> div:last-child {
+		flex: 0 0 50%;
+	}
+}
+
+.buttonRow {
+	display: flex;
+	flex-direction: row;
+	margin: 0 2rem;
+	margin-top: 2rem;
+
+	> button {
+		font-size: 0.9125rem;
+
+		&:not(:first-of-type) {
+			margin-left: 1rem;
+		}
+	}
+}

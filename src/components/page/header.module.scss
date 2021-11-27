@@ -1,0 +1,189 @@
+@import 'styles/common.scss';
+
+@mixin desktop-header-text {
+	font-family: 'SourceSansPro Light';
+	font-size: 0.8125rem;
+	text-transform: uppercase;
+}
+
+.headerContainer {
+	position: sticky;
+	top: 0;
+}
+
+@mixin header {
+	position: sticky;
+	top: 0;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background: white;
+	min-height: 3.4375rem;
+
+	z-index: 2;
+}
+
+@mixin nav {
+	flex: 1;
+
+	ul {
+		display: flex;
+
+		> li {
+			> a {
+				@include desktop-header-text;
+				@include text-underline(black);
+			}
+		}
+	}
+}
+
+.desktopHeader {
+	@include header;
+	padding: 0 3.5rem;
+}
+
+.mobileHeader {
+	@include header;
+	padding: 0 1.25rem;
+}
+
+.desktopNav {
+	@include nav;
+
+	margin-right: auto;
+	display: flex;
+	align-items: center;
+
+	ul {
+		flex-direction: row;
+		align-items: center;
+
+		> li {
+			margin-right: 1.5rem;
+			white-space: nowrap;
+		}
+	}
+}
+
+.desktopShoppingBagLink {
+	@include desktop-header-text;
+	@include text-underline(black);
+}
+
+.mobileIcon {
+	font-size: 1.25rem;
+
+	&:not(:last-of-type) {
+		margin-right: 0.75rem;
+	}
+}
+
+.headerEnd {
+	flex: 1;
+	margin-left: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.title {
+	display: flex;
+	align-items: center;
+	> a {
+		font-family: 'Raleway Light';
+		font-size: 1.5rem;
+		letter-spacing: 0.05rem;
+	}
+}
+
+.mobileMenuContainer {
+	position: fixed;
+
+	bottom: 0;
+	right: 0;
+	left: 0;
+
+	display: flex;
+	flex-direction: column;
+	background: white;
+
+	> nav {
+		flex: 1;
+
+		> ul {
+			display: flex;
+			flex-direction: column;
+			align-items: stretch;
+			margin: 0 1.725rem;
+
+			> li {
+				margin: 0.8125rem 0;
+
+				> a {
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					text-transform: uppercase;
+					letter-spacing: 0.08ch;
+
+					> p {
+						font-family: 'SourceSansPro Light';
+						font-weight: 400;
+					}
+
+					> * {
+						font-size: 1rem;
+					}
+
+					> svg {
+						color: #979797;
+					}
+				}
+			}
+
+			> span {
+				margin: 0.6125rem * 2 0;
+				height: 1pt;
+				width: 15%;
+				background: #979797;
+			}
+		}
+	}
+
+	> button {
+		border-top: 1px solid black;
+		// border-bottom: 1px solid black;
+
+		padding: 0.75rem 1rem;
+		display: flex;
+		justify-content: center;
+
+		color: black;
+		background-color: white;
+
+		font-size: 0.9375rem;
+		letter-spacing: 0.08ch;
+
+		font-family: 'SourceSansPro Light';
+		font-weight: 400;
+
+		&:hover {
+			color: white;
+			background-color: black;
+		}
+	}
+}
+
+.sideNav {
+	position: absolute;
+	background: white;
+	z-index: 99;
+	opacity: 1;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	transition: all 0.175s ease-in-out;
+}

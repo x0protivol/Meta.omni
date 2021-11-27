@@ -1,0 +1,111 @@
+@import 'styles/common.scss';
+
+.footer {
+	display: center;
+	flex-direction: column;
+	margin-bottom: 1rem;
+	margin-top: 2rem;
+
+	section {
+		margin-bottom: 0.75rem;
+	}
+}
+
+.footerRow {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.footerLinks {
+	> a,
+	> span {
+		font-family: 'SourceSansPro';
+		position: relative;
+		display: inline-block;
+		font-size: 0.6875rem;
+		color: rgb(136, 136, 136);
+
+		&:not(:first-child) {
+			margin-left: 0.75rem;
+		}
+	}
+
+	> a {
+		@include text-underline(rgb(136, 136, 136));
+	}
+
+	svg {
+		font-size: 1rem;
+	}
+}
+
+.sponsor {
+	&:not(:first-of-type) {
+		margin-left: 1rem;
+	}
+
+	> figure {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		flex: 0 0 auto;
+
+		> img {
+			// max-height: 2.5rem;
+			width: 100%;
+			font-family: 'SourceSansPro';
+			font-size: 0.875rem;
+			color: rgb(136, 136, 136);
+		}
+
+		> figcaption {
+			margin-top: 0.3125rem;
+			font-family: 'SourceSansPro';
+			font-size: 0.875rem;
+			color: rgb(136, 136, 136);
+		}
+	}
+}
+
+.sponsorSection {
+	display: flex;
+	flex-direction: column;
+	align-self: stretch;
+	// margin-bottom: 2.75rem !important;
+
+	> ul {
+		display: flex;
+		justify-content: space-around;
+		flex: 1;
+
+		> li {
+			margin: 0 1.35rem;
+		}
+
+		&:first-child {
+			margin-left: 1rem;
+		}
+
+		&:last-child {
+			margin-left: 1rem;
+		}
+	}
+}
+
+.mobileSponsorList {
+	// background: red;
+	justify-content: center !important;
+	&:first-of-type {
+		margin-bottom: 2rem;
+	}
+}
+
+.sponsorSeparator {
+	display: block;
+	height: 1px;
+	width: 95%;
+	background: #dadadb;
+	margin: 0 auto;
+	margin-bottom: 0.885rem;
+}

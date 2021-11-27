@@ -1,0 +1,79 @@
+.container {
+	display: flex;
+	flex-direction: row;
+	margin-top: 2.1875rem;
+}
+
+.categoryBrowser {
+	flex: 0 0 15%;
+	align-items: flex-start;
+	display: flex;
+	flex-direction: column;
+
+	> div {
+		margin: 0 2rem;
+	}
+}
+
+.itemContainer {
+}
+
+.categoryDescription {
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
+.title {
+	text-align: center;
+	margin-bottom: 0.3125rem;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	flex: 0 0 70%;
+}
+
+.category {
+	font-family: 'SourceSansPro';
+	font-size: 3.1rem;
+}
+
+.mobileGrid {
+	// margin-left: 1rem;
+	// margin-right: 1rem;
+	margin-bottom: 2rem;
+}
+
+.mobileTitle {
+	margin-left: 1rem;
+	margin-right: 1rem;
+	margin-top: 1rem;
+}
+
+.mobileButtonRow {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+
+	> span {
+		// align-self: stretch;
+		width: 1pt;
+		// height: 100%;
+		align-self: stretch;
+		background: #dadbde;
+		display: block;
+	}
+
+	> button {
+		//flex: 0 0 50%;
+	}
+}
+
+.mobileTitle {
+	margin-top: 1rem;
+}
+
+.mobileDescription {
+	margin: 0 2rem;
+}

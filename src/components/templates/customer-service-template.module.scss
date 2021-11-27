@@ -1,0 +1,70 @@
+.container {
+	display: flex;
+	flex-direction: row;
+	margin-top: 2.1875rem;
+
+	> aside {
+		flex: 0 0 15%;
+		align-items: flex-start;
+		display: flex;
+		flex-direction: column;
+
+		> div {
+			margin: 0 2rem;
+		}
+	}
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	flex: 0 0 70%;
+}
+
+.mobileMain {
+	display: flex;
+	flex-direction: column;
+	margin-top: 2rem;
+}
+
+.contactContainer {
+	h3 {
+		white-space: nowrap;
+		font-size: 0.8125rem;
+		font-family: 'SourceSansPro SemiBold';
+		margin-bottom: 0.45rem;
+	}
+
+	p:not(:first-of-type) {
+		margin-top: 0.3325rem;
+	}
+
+	p,
+	a {
+		font-size: 0.6875rem;
+	}
+
+	a {
+		text-decoration: underline;
+		cursor: pointer;
+	}
+}
+
+.mobileButtonRow {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+
+	> span {
+		// align-self: stretch;
+		width: 1pt;
+		// height: 100%;
+		align-self: stretch;
+		background: #dadbde;
+		display: block;
+	}
+
+	> button {
+		//flex: 0 0 50%;
+	}
+}

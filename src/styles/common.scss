@@ -1,0 +1,32 @@
+@mixin text-underline($color) {
+	position: relative;
+
+	&:hover:before {
+		visibility: visible;
+		width: 100%;
+	}
+
+	&:before {
+		content: ' ';
+		position: absolute;
+		width: 0;
+		height: 1px;
+		bottom: 0;
+		left: 0;
+		background-color: $color;
+		visibility: hidden;
+		transition: all 0.12s ease-in-out;
+	}
+}
+
+@mixin desktop {
+	@media screen and (min-width: 992px) {
+		@content;
+	}
+}
+
+@mixin mobile {
+	@media screen and (max-width: 991px) {
+		@content;
+	}
+}

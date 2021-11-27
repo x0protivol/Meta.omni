@@ -1,0 +1,48 @@
+.container {
+	display: flex;
+	flex-direction: column;
+
+	> a {
+		flex: 1;
+		display: flex;
+		margin: 1rem;
+
+		> figure {
+			min-height: 100%;
+
+			display: flex;
+			justify-content: space-between;
+			flex-direction: column;
+
+			> div {
+				> img {
+					max-width: 100%;
+					height: auto;
+				}
+			}
+
+			> figcaption {
+				margin-top: 0.6rem;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				flex: 1;
+
+				> * {
+					font-size: 0.6875rem;
+					font-weight: 400;
+				}
+
+				> p {
+					flex: 1;
+					font-weight: bold;
+					font-size: 0.75rem;
+				}
+
+				> * {
+					text-align: center;
+				}
+			}
+		}
+	}
+}

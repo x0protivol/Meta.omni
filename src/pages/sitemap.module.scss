@@ -1,0 +1,36 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+
+	&:not(:first-of-type) {
+		margin-top: 2rem;
+	}
+
+	> h2 {
+		text-align: center;
+		margin: 0 2rem;
+	}
+
+	> div {
+		margin-top: 0.7615rem;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	a {
+		font-size: 0.675rem;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	h2 > a {
+		font-size: 0.9125rem;
+	}
+
+	h2 {
+		margin-bottom: 0.4125rem;
+	}
+}

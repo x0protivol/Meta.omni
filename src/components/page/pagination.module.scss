@@ -1,0 +1,46 @@
+.paginationContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1.8125rem;
+}
+
+.textButton {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.textButtonLeft {
+	@extend .textButton;
+
+	margin-right: 1rem;
+	svg {
+		margin-right: 0.3125rem;
+	}
+}
+
+.textButtonRight {
+	@extend .textButton;
+
+	margin-left: 1rem;
+	svg {
+		margin-left: 0.3125rem;
+	}
+}
+
+.dots {
+	letter-spacing: 0ch;
+	font-size: 0.6875rem;
+}
+
+.number {
+	cursor: pointer;
+}
+
+.pageElement {
+	margin: 0 0.4125rem;
+}

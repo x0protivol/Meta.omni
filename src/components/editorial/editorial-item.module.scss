@@ -1,0 +1,107 @@
+.container {
+	display: flex;
+	flex-direction: column;
+
+	figure {
+		cursor: pointer;
+	}
+}
+
+.stretchContainer {
+	display: flex;
+	flex-direction: column;
+	align-self: stretch !important;
+
+	a,
+	figure {
+	}
+
+	figure {
+		cursor: pointer;
+
+		> div {
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position-x: 50%;
+			background-position-y: 50%;
+
+			> img {
+			}
+		}
+
+		> figcaption {
+			margin-top: 0.23rem;
+		}
+	}
+}
+
+.splitContainer {
+	display: flex;
+	flex-direction: row;
+}
+
+.titleContainer {
+	display: flex;
+	flex-direction: column;
+
+	align-self: stretch;
+
+	> a {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		justify-content: space-around;
+	}
+
+	h4 {
+		font-size: 2.25rem;
+		color: black;
+	}
+
+	p {
+		margin-top: 1.25rem;
+		font-size: 1.375rem;
+		color: gray;
+	}
+}
+
+.image {
+	max-width: 100%;
+	height: auto;
+}
+
+.captionContainer {
+	margin-top: 0.6125rem;
+	display: flex;
+	flex-direction: column;
+
+	> div {
+		&:not(:first-of-type) {
+			margin-left: 1rem;
+		}
+	}
+
+	> h3 {
+		font-size: 0.9125rem;
+	}
+
+	span {
+		font-size: 0.8125rem;
+	}
+
+	> p {
+		margin-top: 0.46875rem;
+		font-size: 0.6875rem;
+	}
+}
+
+.categoryContainer {
+	padding-right: 1rem;
+	align-self: flex-start;
+
+	> h4 {
+		font-size: 0.8125rem;
+		color: gray;
+	}
+}

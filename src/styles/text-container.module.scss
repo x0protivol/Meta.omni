@@ -1,0 +1,59 @@
+.container {
+	max-width: 75ch;
+	margin: 0 auto;
+	padding: 0 2rem;
+	text-align: justify;
+
+	* {
+		font-family: 'SourceSansPro';
+	}
+
+	h2 {
+		text-align: center;
+		margin-top: 1rem;
+		font-size: 1.25rem;
+		margin-bottom: 2rem;
+	}
+
+	h3 {
+		margin-top: 1rem;
+		font-size: 1rem;
+	}
+
+	h4 {
+		margin-top: 0.5rem;
+		font-size: 0.8125rem;
+	}
+
+	p {
+		margin-top: 0.3rem;
+		font-size: 0.6875rem;
+	}
+
+	a {
+		font-size: 0.6875rem;
+		text-decoration: underline;
+	}
+
+	ul,
+	ol {
+		list-style-type: disc;
+		margin-top: 0.2rem;
+		// list-style-position: inside;
+		padding-left: 1rem;
+	}
+
+	table {
+		table-layout: fixed;
+		margin-top: 0.3rem;
+		width: 100%;
+		border-spacing: 13px 11px;
+
+		td {
+		}
+
+		* {
+			font-size: 0.6875rem;
+		}
+	}
+}

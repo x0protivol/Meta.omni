@@ -1,0 +1,154 @@
+@import 'styles/common.scss';
+
+.categoryBrowser {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.linkList {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-bottom: 1rem;
+}
+
+.title {
+	white-space: nowrap;
+
+	font-size: 0.8125rem;
+	font-family: 'SourceSansPro SemiBold';
+
+	margin-bottom: 1rem;
+}
+
+.mobileTitle {
+	@extend .title;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	p {
+		font-family: 'SourceSansPro SemiBold';
+	}
+
+	color: black;
+	background-color: white;
+
+	font-size: 1rem;
+	text-transform: uppercase;
+	letter-spacing: 0.08ch;
+
+	margin: 0.8125rem 1.725rem;
+
+	align-self: stretch;
+}
+
+.smol {
+	margin-bottom: 0.45rem;
+}
+
+.default {
+	white-space: nowrap;
+
+	font-size: 0.8125rem;
+	font-family: 'SourceSansPro';
+}
+
+.link {
+	// @include text-underline(black);
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.mobileOverlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background: white;
+
+	transition: all 0.175s ease-in-out;
+	z-index: 98;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.mobileContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: flex-start;
+	overflow-y: scroll;
+	flex: 1;
+}
+
+.openButton {
+	align-self: stretch;
+	width: 100%;
+	border-top: 1pt solid #dadbde;
+	border-bottom: 1pt solid #dadbde;
+
+	padding: 0.75rem 1rem;
+	display: flex;
+	justify-content: center;
+
+	color: black;
+	background-color: white;
+
+	font-family: 'SourceSansPro SemiBold';
+	font-size: 0.7375rem;
+	text-transform: uppercase;
+	letter-spacing: 0.15ch;
+
+	&:hover {
+		color: white;
+		background-color: black;
+	}
+}
+
+.mobileLinkButton {
+	// border-bottom: 1px solid black;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	p {
+		font-family: 'SourceSansPro SemiBold';
+	}
+
+	color: black;
+	background-color: white;
+
+	font-size: 1rem;
+	text-transform: uppercase;
+	letter-spacing: 0.08ch;
+
+	margin: 0.8125rem 1.725rem;
+
+	align-self: stretch;
+
+	> p {
+		font-family: 'SourceSansPro Light';
+		font-weight: 400;
+		font-size: 1rem;
+	}
+
+	> svg {
+		color: #979797;
+	}
+}
+
+.closeButton {
+	border-top: 1pt solid #eaebdb;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	font-size: 1rem;
+
+	padding: 0.8125rem;
+}

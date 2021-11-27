@@ -1,0 +1,30 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://omnifinery.com
+
+# Sitemaps
+Sitemap: https://omnifinery.com/sitemap.xml
+Sitemap: https://omnifinery.com/sitemaps/editorials/0.xml
+Sitemap: https://omnifinery.com/sitemaps/editorials/1.xml
+Sitemap: https://omnifinery.com/sitemaps/editorials/2.xml
+Sitemap: https://omnifinery.com/sitemaps/editorials/3.xml
+Sitemap: https://omnifinery.com/sitemaps/editorials/4.xml
+Sitemap: https://omnifinery.com/sitemaps/editorials/5.xml
+Sitemap: https://omnifinery.com/sitemaps/editorials/6.xml
+Sitemap: https://omnifinery.com/sitemaps/editorials/7.xml
+Sitemap: https://omnifinery.com/sitemaps/editorials/8.xml
+Sitemap: https://omnifinery.com/sitemaps/products/0.xml
+Sitemap: https://omnifinery.com/sitemaps/products/1.xml
+Sitemap: https://omnifinery.com/sitemaps/products/2.xml
+Sitemap: https://omnifinery.com/sitemaps/products/3.xml
+Sitemap: https://omnifinery.com/sitemaps/products/4.xml
+Sitemap: https://omnifinery.com/sitemaps/products/5.xml
+Sitemap: https://omnifinery.com/sitemaps/products/6.xml
+Sitemap: https://omnifinery.com/sitemaps/products/7.xml
+Sitemap: https://omnifinery.com/sitemaps/products/8.xml
+Sitemap: https://omnifinery.com/sitemaps/products/9.xml
+Sitemap: https://omnifinery.com/sitemaps/products/10.xml
+Sitemap: https://omnifinery.com/sitemaps/products/11.xml

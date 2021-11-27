@@ -1,0 +1,44 @@
+.container {
+	display: flex;
+	flex-direction: row;
+	margin-top: 2.1875rem;
+}
+
+.categoryBrowser {
+	flex: 0 0 15%;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.itemContainer {
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	flex: 0 0 85%;
+}
+
+.editorial {
+	> * > * {
+		padding: 1rem;
+	}
+}
+
+.category {
+	font-family: 'SourceSansPro';
+	font-size: 3.1rem;
+}
+
+.mobileGrid {
+	// margin-left: 1rem;
+	// margin-right: 1rem;
+	margin-bottom: 2rem;
+}
+
+.mobileTitle {
+	margin-left: 1rem;
+	margin-right: 1rem;
+	margin-top: 1rem;
+}

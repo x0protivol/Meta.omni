@@ -1,0 +1,17 @@
+@import 'styles/common.scss';
+
+.container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	> li {
+		@include desktop {
+			flex: 0 0 33%;
+		}
+
+		@include mobile {
+			flex: 0 0 100%;
+		}
+	}
+}
