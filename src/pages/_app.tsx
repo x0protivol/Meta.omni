@@ -34,7 +34,7 @@ const OmnifineryApp: FC<AppProps> = ({ pageProps, Component }: AppProps): ReactE
 	return (
 		<MediaContextProvider>
 			<Head>
-				<title>Omnifinery</title>
+				<title>meta.omni</title>
 			</Head>
 			<Component {...pageProps}></Component>
 		</MediaContextProvider>
