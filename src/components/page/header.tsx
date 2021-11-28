@@ -18,7 +18,7 @@ type MobileNavProps = {
 const TitleLink: FC = (): ReactElement => (
 	<span className={styles.title}>
 		<Link href="/">
-			<a><img src={'images/Vector.png'} />;</a>
+			<a><img src={'images/Vector.png'} /></a>
 		</Link>
 	</span>
 );
