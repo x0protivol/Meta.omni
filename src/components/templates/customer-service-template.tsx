@@ -63,10 +63,10 @@ export const CustomerServiceTemplate: FC = ({ children }): ReactElement => {
 							<h3>Customer Care</h3>
 							<p>Please call us for immediate answers to questions regarding orders and shipping.</p>
 							<p>
-								Whatsapp <a href="tel:+8618675951317">+86 186 7595 1317</a>
+								Whatsapp <a href="tel:+1234">+1234</a>
 							</p>
 							<p>
-								Contact us by <a href="mailto:contact@omnifinery.com">email</a>.
+								Contact us by <a href="mailto:contact@meta.omni.com">email</a>.
 							</p>
 						</div>
 					</aside>

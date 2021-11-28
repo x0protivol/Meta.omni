@@ -8,6 +8,9 @@ import { Media } from 'utils/responsive';
 
 import styles from './header.module.scss';
 
+import logo from './..images/Vector.png';
+import logo from './..images/nVector.png';
+
 type MobileNavProps = {
 	top: number;
 };
@@ -15,7 +18,7 @@ type MobileNavProps = {
 const TitleLink: FC = (): ReactElement => (
 	<span className={styles.title}>
 		<Link href="/">
-			<a>Meta.Omni</a>
+			<a><img src={'images/Vector.png'} />;</a>
 		</Link>
 	</span>
 );
@@ -115,41 +118,26 @@ const DesktopNav: FC = (): ReactElement => (
 		<ul>
 			<li>
 				<Link href="/store/women">
-					<a>Womenswear</a>
+					<a>Shop</a>
 				</Link>
 			</li>
 			<li>
 				<Link href="/store/men">
-					<a>Menswear</a>
+					<a>Current Voting</a>
 				</Link>
 			</li>
 			<li>
 				<Link href="/store/gallery">
-					<a>Gallery</a>
+					<a>Last Collection</a>
 				</Link>
 			</li>
-			<li>
-				<Link href="/store/lifestyle">
-					<a>Lifestyle</a>
-				</Link>
-			</li>
-			<li>
-				<Link href="/editorial">
-					<a>Editorial</a>
-				</Link>
-			</li>
-
-			<li>
-				<Link href="/editorial">
-					<a>Current Votings</a>
-				</Link>
-			</li>
+			
 		</ul>
 	</nav>
 );
 
 const DesktopShoppingBagLink: FC = (): ReactElement => (
-	<button className={cn('snipcart-checkout', styles.desktopShoppingBagLink)}>LUKSO UBP-WALLET</button>
+	<button className={cn('snipcart-checkout', styles.desktopShoppingBagLink)}><img src={'nVector.png'} />Connect WALLET</button>
 );
 
 const MobileShoppingBagLink: FC = (): ReactElement => (
