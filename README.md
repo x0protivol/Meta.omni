@@ -49,6 +49,8 @@ Video Presentation: https://youtu.be/QAeWGllXtDY
 
 Slides: https://drive.google.com/file/d/186jqcb3I4wOCJ6zkcF84MQiYg3VS3wMU/view?usp=sharing 
 
+2nd Repo: https://github.com/bolajiscott/metaomni
+
 As we started late and had problems to find developers with time we where not able to complete the project. 
 
 
