@@ -2,7 +2,12 @@
  # Meta.Omnifinery by omnifinery.com
  
  # Team members :
- x0protivol , evgenyavetisian , dohne12 , bolajiscott , ninja-fire
+  # github          discord  
+ x0protivol -      He#2811 , 
+ evgenyavetisian - Evgeny Avetisian#2339  , 
+ dohne12 -       ddhone#1317  , 
+ bolajiscott -  bolajiscott12#9124  , 
+ ninja-fire -   ninjafire12#1104
  
 # Explaination of the project :   
 An ultimate objective of our project is to create an infrastructure to achieve a decentralised fashion design ecosystem, where customers participate in design attributes voting process to influence the outcome of generative design fashion product. Once the voting process is complete a surprise generative design NFT is created that is distributed to the voters in a form of a 3D digital fashion product, that they can wear in metaverse, as well as an offline fashion item will be manufactured based on the surprise generative design and also distributed to the voters. As some minimum requirements are necessary to finalise voting process as well as an offline manufacturing process, it will be minted and produced in minimum required editions where the stock remainder of the NFTs and offline products that didn’t sell during the voting process will be stored for the potential further sale on the market place. 
@@ -25,8 +30,11 @@ Explanation with video : https://drive.google.com/file/d/1PBuq6oSzLt6zF1CvBUC1LL
 
 
 
-# Start our Hardhat project:
+# Basic Sample Hardhat Project
 
+This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+
+Try running some of the following tasks:
 
 ```shell
 npx hardhat accounts
@@ -37,21 +45,3 @@ npx hardhat node
 node scripts/sample-script.js
 npx hardhat help
 ```
-# Current Project Status --> Submission Lukso Hackathon 29.11.2021
-
-Our Front end partially implement, design has been integraded as well as wallet connect, in order to connect with Universal Blockchain Profile
-
-Voting contract has been implemented but has not been integrated. 
-
-Design: https://www.figma.com/file/ZsV6BxhPL7NlujivwjaVPo/meta-omnifinery?node-id=1%3A3 
-
-Video Presentation: https://youtu.be/QAeWGllXtDY 
-
-Slides: https://drive.google.com/file/d/186jqcb3I4wOCJ6zkcF84MQiYg3VS3wMU/view?usp=sharing 
-
-
-
-
-
-
-
