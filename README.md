@@ -47,8 +47,11 @@ Our Front end partially implement, design has been integraded as well as wallet 
 Voting contract has been implemented but has not been integrated. 
 
 Design: https://www.figma.com/file/ZsV6BxhPL7NlujivwjaVPo/meta-omnifinery?node-id=1%3A3 
+
 Video Presentation: 
+
 Slides: https://drive.google.com/file/d/186jqcb3I4wOCJ6zkcF84MQiYg3VS3wMU/view?usp=sharing 
+
 
 
 
