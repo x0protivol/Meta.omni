@@ -13,7 +13,7 @@ In this pilot version we are focusing on a proof of concept for the voting syste
 
 PPT link: https://drive.google.com/file/d/10dc_-04cbm6QPj87jWe00uRboQBUgKhn/view?usp=sharing  
 
-Explanation : https://drive.google.com/file/d/1PBuq6oSzLt6zF1CvBUC1LLRn7jvIx3kT/view?usp=sharing
+Explanation with video : https://drive.google.com/file/d/1PBuq6oSzLt6zF1CvBUC1LLRn7jvIx3kT/view?usp=sharing
 
 
   
