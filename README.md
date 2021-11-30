@@ -19,15 +19,6 @@ Explanation with video : https://drive.google.com/file/d/1PBuq6oSzLt6zF1CvBUC1LL
   
 # How to run it :
 
-
-
-
-
-
-
-# Start our Hardhat project:
-
-
 ```shell
 npx hardhat accounts
 npx hardhat compile
@@ -37,11 +28,13 @@ npx hardhat node
 node scripts/sample-script.js
 npx hardhat help
 ```
+2nd Repo for more functionality : https://github.com/x0protivol/metaomni
+
 # Current Project Status --> Submission Lukso Hackathon 29.11.2021
 
-Our Front end partially implement, design has been integraded as well as wallet connect, in order to connect with Universal Blockchain Profile
+Our Front end  implement, design has been integraded as well as wallet connect and metamask integration , in order to connect with Universal Blockchain Profile
 
-Voting contract has been implemented but has not been integrated. 
+Voting contract has been implemented.
 
 Design: https://www.figma.com/file/ZsV6BxhPL7NlujivwjaVPo/meta-omnifinery?node-id=1%3A3 
 
@@ -49,9 +42,7 @@ Video Presentation: https://youtu.be/QAeWGllXtDY
 
 Slides: https://drive.google.com/file/d/186jqcb3I4wOCJ6zkcF84MQiYg3VS3wMU/view?usp=sharing 
 
-2nd Repo: https://github.com/bolajiscott/metaomni
-
-As we started late and had problems to find developers with time we where not able to complete the project. 
+ 
 
 
 
