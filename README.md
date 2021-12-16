@@ -1,8 +1,7 @@
 
  # Meta.Omnifinery by omnifinery.com
  
- # Team members :
- x0protivol , evgenyavetisian , dohne12 , bolajiscott , ninja-fire
+
  
 # Explaination of the project :   
 An ultimate objective of our project is to create an infrastructure to achieve a decentralised fashion design ecosystem, where customers participate in design attributes voting process to influence the outcome of generative design fashion product. Once the voting process is complete a surprise generative design NFT is created that is distributed to the voters in a form of a 3D digital fashion product, that they can wear in metaverse, as well as an offline fashion item will be manufactured based on the surprise generative design and also distributed to the voters. As some minimum requirements are necessary to finalise voting process as well as an offline manufacturing process, it will be minted and produced in minimum required editions where the stock remainder of the NFTs and offline products that didn’t sell during the voting process will be stored for the potential further sale on the market place. 
