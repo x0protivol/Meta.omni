@@ -10,8 +10,7 @@ Potentially the design selection attributes can further decentralised by being f
 # usecases: Wholesale merchandise sale and delivery based on NFTs bought, Wholesale-NFTs-as-a-service model for high voulme wholesale events, and fashion industry. 
 Similar product in fashion industry : https://www.metafactory.ai/
 
-In this pilot version we are focusing on a proof of concept for the voting system and smart contract behind it, by using the designs of our in-house brand (KOMETA.A Ladybug / META.A KOMETA.A) and further on we intend to continue developing it to achieve the ultimate goal of decentralising fashion design ecosystem for other brands too. As Lukso is fashion oriented blockchain, we intend to continue building our platform with Lukso in mind further on.
-
+In this pilot version we are focusing on a proof of concept for the voting system and smart contract behind it, by using the designs of our in-house brand (KOMETA.A Ladybug / META.A KOMETA.A) and further on we intend to continue developing it to achieve the ultimate goal of decentralising fashion design ecosystem for other brands too. 
 PPT link: https://drive.google.com/file/d/10dc_-04cbm6QPj87jWe00uRboQBUgKhn/view?usp=sharing  
 
 Explanation with video : https://drive.google.com/file/d/1PBuq6oSzLt6zF1CvBUC1LLRn7jvIx3kT/view?usp=sharing
@@ -31,7 +30,7 @@ npx hardhat help
 ```
 2nd Repo for more functionality : https://github.com/x0protivol/metaomni
 
-# Current Project Status --> Submission Lukso Hackathon 29.11.2021
+# Current Project Status 
 
 Our Front end  implement, design has been integraded as well as wallet connect and metamask integration , in order to connect with Universal Blockchain Profile
 
