@@ -1,5 +1,5 @@
 
- # Meta.Omnifinery by omnifinery.com
+ # Meta.omni by omnifinery.com
  
 
  
