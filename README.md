@@ -32,7 +32,7 @@ npx hardhat help
 
 # Current Project Status 
 
-Our Front end  implement, design has been integraded as well as wallet connect and metamask integration , in order to connect with Universal Blockchain Profile
+Our Front end  implement, design has been integraded as well as wallet connect and metamask integration , in order to connect with Universal Blockchain Profile 
 
 Voting contract has been implemented.
 
